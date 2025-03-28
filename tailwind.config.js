@@ -16,7 +16,7 @@ module.exports = {
         },
         text: {
           DEFAULT: "#ffffff",
-          secondary: "#94a3b8",
+          secondary: "#afafaf",
         },
       },
     },

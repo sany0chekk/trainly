@@ -16,6 +16,7 @@ export default function TabsLayout() {
           paddingTop: 10,
         },
       }}
+      initialRouteName="workout"
     >
       <Tabs.Screen
         name="workout"

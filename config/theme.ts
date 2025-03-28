@@ -10,6 +10,6 @@ export const COLORS = {
   },
   text: {
     default: "#ffffff",
-    secondary: "#94a3b8",
+    secondary: "#afafaf",
   },
 };
