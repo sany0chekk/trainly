@@ -8,7 +8,7 @@ export default function LoginScreen() {
   const { signInWithGoogle } = useAuth();
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, tw`justify-center items-center`]}>
       <View style={tw`justify-center items-center mb-10`}>
         <Text style={tw`text-3xl font-bold text-text uppercase`}>
           Welcome to Trainly
