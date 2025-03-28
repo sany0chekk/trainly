@@ -8,7 +8,7 @@ export default function InitialLayout() {
 
   useEffect(() => {
     user
-      ? router.replace("/(app)/(tabs)/workout")
+      ? router.replace("/(app)/(tabs)/home")
       : router.replace("/(auth)/login");
   }, [user]);
 

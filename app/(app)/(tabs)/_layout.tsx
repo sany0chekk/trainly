@@ -1,6 +1,6 @@
 import { COLORS } from "@/config/theme";
 import { Tabs } from "expo-router";
-import { Book, Dumbbell, User, History, Bike } from "lucide-react-native";
+import { Book, Dumbbell, User, History, Bike, Home } from "lucide-react-native";
 export default function TabsLayout() {
   return (
     <Tabs
@@ -31,14 +31,12 @@ export default function TabsLayout() {
           shadowRadius: 8,
         },
       }}
-      initialRouteName="workout"
+      initialRouteName="home"
     >
       <Tabs.Screen
-        name="workout"
+        name="home"
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <Dumbbell color={color} size={size} />
-          ),
+          tabBarIcon: ({ color, size }) => <Home color={color} size={size} />,
         }}
       />
       <Tabs.Screen
