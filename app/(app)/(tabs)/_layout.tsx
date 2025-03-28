@@ -12,8 +12,23 @@ export default function TabsLayout() {
         tabBarStyle: {
           backgroundColor: COLORS.background.default,
           borderColor: "transparent",
-          height: 40,
+          height: 60,
+          position: "absolute",
+          bottom: 20,
+          left: 20,
+          right: 20,
+          borderRadius: 30,
           paddingTop: 10,
+          paddingBottom: 10,
+          marginHorizontal: 20,
+          elevation: 0,
+          shadowColor: COLORS.background.default,
+          shadowOffset: {
+            width: 0,
+            height: 4,
+          },
+          shadowOpacity: 0.1,
+          shadowRadius: 8,
         },
       }}
       initialRouteName="workout"

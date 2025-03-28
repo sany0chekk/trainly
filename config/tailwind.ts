@@ -1,7 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+import { create } from "twrnc";
+
+const tw = create({
   theme: {
     extend: {
       colors: {
@@ -21,5 +20,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+});
+
+export default tw;

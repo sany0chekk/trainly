@@ -1,12 +1,10 @@
-import { View, Text, TouchableOpacity } from "react-native";
-import { useAuth } from "@/hooks/useAuth";
+import UserHeader from "@/components/complex/workout/user-header";
+import { View, Text } from "react-native";
+import { styles } from "@/components/ui";
 export default function WorkoutScreen() {
-  const { signOut } = useAuth();
   return (
-    <View className="container items-center justify-center">
-      <TouchableOpacity onPress={signOut}>
-        <Text>Logout</Text>
-      </TouchableOpacity>
+    <View style={styles.container}>
+      <UserHeader />
     </View>
   );
 }
